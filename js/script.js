@@ -77,12 +77,42 @@ function triangleAreaCalculate() {
     document.getElementById("TA").innerText = "Its area is "+area+" cm^2";
 }
 
-  function limpiarInput() {
-    document.getElementById("squareInput").value="";
-    document.getElementById("triangleInput1").value="";
-    document.getElementById("triangleInput2").value="";
-    document.getElementById("triangleInputB").value="";
-    document.getElementById("triangleInputH").value="";
-    document.getElementById("circleInput").value="";
 
-  }
+function cleanSquare(){
+    const cleanParagrahp1 = document.getElementById("SA");
+    const cleanParagrahp2 = document.getElementById("SP");
+    let display = document.getElementById("squareInput");
+
+    cleanParagrahp1.innerText = "";
+    cleanParagrahp2.innerText = "";
+    display.value="";
+}
+
+function cleanCircle(){
+    const cleanParagrahp1 = document.getElementById("CA");
+    const cleanParagrahp2 = document.getElementById("CP");
+    let display = document.getElementById("circleInput");
+
+    cleanParagrahp1.innerText = "";
+    cleanParagrahp2.innerText = "";
+    display.value="";
+}
+
+function cleanTriangle(){
+    const cleanParagrahp1 = document.getElementById("TA");
+    const cleanParagrahp2 = document.getElementById("TP");
+    const TRII = document.getElementById("triangleInput1");
+    const TRI2 = document.getElementById("triangleInput2");
+    const TRIB = document.getElementById("triangleInputB");
+    const TRIH = document.getElementById("triangleInputH");
+
+    cleanParagrahp1.innerText = "";
+    cleanParagrahp2.innerText = "";
+    TRII.value="";
+    TRI2.value="";
+    TRIB.value="";
+    TRIH.value="";
+}
+
+
+
